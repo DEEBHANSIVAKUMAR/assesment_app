@@ -15,7 +15,10 @@ from pydantic import BaseModel, EmailStr, Field, field_validator
 
 load_dotenv()
 
-MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
+MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://deebhan:deebhan123321@cluster0.icfvsng.mongodb.net/?appName=Cluster0")
+DATABASE_NAME=assessment_app
+JWT_SECRET=change-this-secret-before-deploying
+FRONTEND_ORIGIN=http://localhost:5173")
 DATABASE_NAME = os.getenv("DATABASE_NAME", "assessment_app")
 JWT_SECRET = os.getenv("JWT_SECRET", "dev-secret-change-me")
 JWT_ALGORITHM = "HS256"
